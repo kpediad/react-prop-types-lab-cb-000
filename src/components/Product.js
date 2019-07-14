@@ -27,5 +27,5 @@ Product.propTypes = {
   hasWatermark: PropTypes.bool,
   color: PropTypes.string.isRequired,
   weight: PropTypes.
-  
+
 };
