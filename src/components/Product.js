@@ -26,6 +26,6 @@ Product.propTypes = {
   producer: PropTypes.string,
   hasWatermark: PropTypes.bool,
   color: PropTypes.string.isRequired,
-  weight: PropTypes.
+  weight: PropTypes.number
 
 };
