@@ -2,9 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let weight_range = [];                                                          
-for (let i = 80; i <= 300; i++) {                                               
-  weight_range.push(i);                                                         
+let weight_range = [];
+for (let i = 80; i <= 300; i++) {
+  weight_range.push(i);
 }
 
 export default class Product extends React.Component {
@@ -33,4 +33,3 @@ Product.propTypes = {
   color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
   weight: PropTypes.oneOf(weight_range).isRequired
 };
-
