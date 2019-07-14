@@ -26,8 +26,7 @@ Product.propTypes = {
   producer: PropTypes.string,
   hasWatermark: PropTypes.bool,
   color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
-  weight: PropTypes.number.isRequired,
-  weight: between80And300
+  weight: PropTypes.number.isRequired
 };
 
 function between80And300(props, propName, componentName) {
