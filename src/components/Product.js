@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 class Product extends React.Component {
- 
+
   render() {
     return (
       <div className="product">
@@ -14,9 +14,7 @@ class Product extends React.Component {
 };
 
 Product.defaultProps = {
-  
+
 };
- 
+
 Product.propTypes = {};
-
-
