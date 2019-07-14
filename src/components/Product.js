@@ -40,5 +40,3 @@ function between80And300(props, propName, componentName) {
   // assume all ok
   return null;
 }
-
-
