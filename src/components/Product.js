@@ -26,17 +26,14 @@ Product.propTypes = {
   producer: PropTypes.string,
   hasWatermark: PropTypes.bool,
   color: PropTypes.oneOf(['white', 'eggshell-white', 'salmon']).isRequired,
-  weight: between80And300,
-  weight: PropTypes.number.isRequired
+  weight: between80And300
 };
 
 function between80And300(props, propName, componentName) {
   componentName = componentName || 'ANONYMOUS';
   if (props[propName]) {
     let value = props[propName];
-    if (typeof value === 'number') {
-        return (value >= 80 && value <= 300) ? null : new Error(propName + ' in ' + componentName + " is not within 80 to 300");
-    }
+    return (typeof value === 'number' && value >= 80 && value <= 300) ? null : new Error(propName + ' in ' + componentName + " is not within 80 to 300");
   }
   // assume all ok
   return null;
