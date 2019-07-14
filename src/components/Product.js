@@ -29,14 +29,14 @@ Product.propTypes = {
   weight: between80And300.isRequired
 };
 
-// function between80And300(props, propName, componentName) {
-//   componentName = componentName || 'ANONYMOUS';
-//   if (props[propName]) {
-//     let value = props[propName];
-//     if (typeof value === 'number') {
-//         return (value >= 80 && value <= 300) ? null : new Error(propName + ' in ' + componentName + " is not within 80 to 300");
-//     }
-//   }
-//   // assume all ok
-//   return null;
-// }
+function between80And300(props, propName, componentName) {
+  componentName = componentName || 'ANONYMOUS';
+  if (props[propName]) {
+    let value = props[propName];
+    if (typeof value === 'number') {
+        return (value >= 80 && value <= 300) ? null : new Error(propName + ' in ' + componentName + " is not within 80 to 300");
+    }
+  }
+  // assume all ok
+  return null;
+}
